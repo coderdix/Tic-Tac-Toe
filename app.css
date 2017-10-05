@@ -1,0 +1,90 @@
+body {
+  background-color: #f7f7f7;
+}
+
+#board, #player {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#player {
+  margin-top: 40px;
+}
+
+.info {
+  background: #fff;
+  width: 45%;
+  padding: 5px 15px;
+  box-shadow: 0px 0px 4px 0px #ccc;
+  cursor: pointer;
+}
+
+.info:hover {
+  box-shadow: 0px 0px 4px 0px #9B84B2;
+}
+
+.iconic {
+  width: 1.3em;
+}
+
+.mark {
+  float: right;
+  color: #666;
+  background-color: transparent
+}
+
+.space {
+  width: 10%
+}
+
+.turn {
+  font-size: 0.8em;
+  text-align: center;
+  width: 100%;
+  margin: 15px 0 20px;
+  color: #696969;
+}
+
+.cell {
+  text-align: center;
+  background-color: rgba(109, 74, 146, 0.65);
+  border-radius: 0.2em;
+  height: 135px;
+}
+
+.cell .icon.mark {
+  width: 4em;
+  margin-top: 2em;
+  float: none;
+}
+
+.cell:nth-of-type(1) {
+  border-right: solid 10px #f7f7f7;
+}
+
+.cell:nth-of-type(3) {
+  border-left: solid 10px #f7f7f7;
+}
+
+#board .row:nth-of-type(2) {
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #f7f7f7;
+  border-width: 10px;
+}
+
+#reset {
+  text-align: center;
+  display: block;
+  color: orangered;
+  padding: 10px;
+  border: 1px dotted;
+  cursor: pointer;
+  max-width: 530px;
+  margin: 20px auto 0;
+}
+
+#reset:hover {
+  background-color: orangered;
+  color: white;
+}
